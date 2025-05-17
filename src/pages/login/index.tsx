@@ -6,7 +6,7 @@ import {
   PasswordInput,
   ActionIcon,
 } from "@mantine/core";
-import { Airplay, AtSign } from "lucide-react";
+import { Airplay } from "lucide-react";
 
 export default function Login() {
   return (
@@ -30,11 +30,11 @@ export default function Login() {
           </Text>
         </Flex>
         <Flex direction={"column"} w={"100%"} align={"center"}>
-          <Input placeholder="Your email" w={"65%"} />
+          <Input placeholder="Enter Your email" w={"65%"} />
           <PasswordInput
             w={"65%"}
             label="Password"
-            placeholder="Your password"
+            placeholder="Enter Your password"
           />
           <Flex>
             <ActionIcon variant="subtle" aria-label="Settings">
