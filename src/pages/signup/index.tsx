@@ -5,8 +5,8 @@ import {
   Input,
   PasswordInput,
   ActionIcon,
+  Button,
 } from "@mantine/core";
-import { Airplay } from "lucide-react";
 export default function Signup() {
   return (
     <>
@@ -25,7 +25,7 @@ export default function Signup() {
             w={"400"}
           />
           <Text c="white" fz={"h1"} ta={"center"} fw={"bolder"}>
-            Login
+            Sign up
           </Text>
         </Flex>
         <Flex direction={"column"} w={"100%"} align={"center"}>
@@ -35,12 +35,23 @@ export default function Signup() {
             label="Password"
             placeholder="Enter Your password"
           />
-          <Flex>
+          <PasswordInput
+            w={"65%"}
+            label="Password"
+            placeholder="Enter Your password"
+          />
+          <Flex gap={"lg"} mt={"lg"}>
             <ActionIcon variant="subtle" aria-label="Settings">
-              <Airplay />
+              <Image
+                src={"/google.svg"}
+                alt="landing Image"
+                h={"30"}
+                w={"30"}
+              />
             </ActionIcon>
           </Flex>
         </Flex>
+        <Button w={"85%"}>Sign up</Button>
       </Flex>
     </>
   );
