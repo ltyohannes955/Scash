@@ -30,9 +30,7 @@ export default function Landing() {
         size="lg"
         w={"85%"}
         rightSection={<ArrowRight size={24} />}
-        onClick={() => {
-          navigate("/login");
-        }}
+        onClick={() => {navigate("/login")}}
       >
         Start
       </Button>
