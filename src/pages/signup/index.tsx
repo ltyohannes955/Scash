@@ -11,7 +11,7 @@ export default function Signup() {
   return (
     <>
       <Flex
-        bg={"black"}
+        bg={"#264533"}
         h={"100vh"}
         justify={"space-evenly"}
         align={"center"}
