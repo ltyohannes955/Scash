@@ -9,19 +9,20 @@ import {
 } from "@mantine/core";
 
 const primary: MantineColorsTuple = [
-  "#E6E7F4",
-  "#CDCFE9",
-  "#9BA0D3",
-  "#686FBC",
-  "#3540A5",
-  "#040F6A", // Your main color
-  "#030C55",
-  "#020940",
-  "#01062B",
-  "#010416"
+  "#ebfcf1",
+  "#d7f9e3",
+  "#aff3c7",
+  "#86edab",
+  "#5ee78f",
+  "#38e07b", // Your main color
+  "#2db462",
+  "#228849",
+  "#175c31",
+  "#0c3018"
 ];
 
 const theme = createTheme({
+  fontFamily: "Spline Sans, sans-serif",
   colors: {
     primary,
   },
