@@ -6,7 +6,7 @@ export default function Landing() {
   const navigate = useNavigate();
   return (
     <Flex
-      bg={"black"}
+      bg={"#264533"}
       h={"100vh"}
       justify={"space-evenly"}
       align={"center"}
@@ -30,7 +30,9 @@ export default function Landing() {
         size="lg"
         w={"85%"}
         rightSection={<ArrowRight size={24} />}
-        onClick={() => {navigate("/login")}}
+        onClick={() => {
+          navigate("/login");
+        }}
       >
         Start
       </Button>
