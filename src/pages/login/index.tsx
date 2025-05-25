@@ -1,46 +1,64 @@
-import {
-  Flex,
-  Text,
-  Image,
-  Input,
-  PasswordInput,
-  ActionIcon,
-} from "@mantine/core";
-import { Airplay } from "lucide-react";
+import { Flex, Text, Input, PasswordInput, Button } from "@mantine/core";
+import { useNavigate } from "react-router";
 
 export default function Login() {
+  const navigate = useNavigate();
   return (
     <>
-      <Flex
-        bg={"black"}
-        h={"100vh"}
-        justify={"space-evenly"}
-        align={"center"}
-        direction={"column"}
-      >
-        <Flex direction={"column"}>
-          <Image
-            src={"/password.svg"}
-            alt="landing Image"
-            h={"500"}
-            w={"400"}
-          />
-          <Text c="white" fz={"h1"} ta={"center"} fw={"bolder"}>
+      <Flex bg={"#122117"} h={"100vh"} align={"center"} direction={"column"}>
+        <Flex direction={"column"} mt={"sm"}>
+          <Text c="white" fz={"sm"} ta={"center"} fw={"bolder"}>
             Login
           </Text>
         </Flex>
-        <Flex direction={"column"} w={"100%"} align={"center"}>
-          <Input placeholder="Enter Your email" w={"65%"} />
+
+        <Flex
+          mt={"lg"}
+          direction={"column"}
+          gap={"sm"}
+          w={"100%"}
+          h={"35%"}
+          align={"center"}
+          justify={"space-between"}
+        >
+          <Text c="white" fz={"h3"} ta={"center"} fw={"bolder"}>
+            Welcome back
+          </Text>
+          <Input
+            size="md"
+            placeholder="Enter Your email"
+            variant="unstyled"
+            w={"95%"}
+            bg={"#264533"}
+            p={"sm"}
+          />
           <PasswordInput
-            w={"65%"}
-            label="Password"
+            size="md"
+            variant="unstyled"
+            w={"95%"}
+            bg={"#264533"}
+            p={"sm"}
             placeholder="Enter Your password"
           />
-          <Flex>
-            <ActionIcon variant="subtle" aria-label="Settings">
-              <Airplay />
-            </ActionIcon>
-          </Flex>
+          <Text color="#38e07b" ta={"left"} w={"95%"}>
+            Forgot Password?
+          </Text>
+          <Button w={"95%"} size="lg">
+            Log In
+          </Button>
+          <Text color="white" fw={"bold"}>
+            New User{" "}
+            <Text
+              c={"#38e07b"}
+              fw={"bold"}
+              span
+              onClick={() => {
+                navigate("/signup");
+              }}
+            >
+              Sign Up
+            </Text>
+          </Text>
         </Flex>
       </Flex>
     </>
