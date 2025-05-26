@@ -18,12 +18,6 @@ export default function Signup() {
         direction={"column"}
       >
         <Flex direction={"column"}>
-          <Image
-            src={"/password.svg"}
-            alt="landing Image"
-            h={"500"}
-            w={"400"}
-          />
           <Text c="white" fz={"h1"} ta={"center"} fw={"bolder"}>
             Sign up
           </Text>
