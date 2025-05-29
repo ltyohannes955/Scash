@@ -34,7 +34,6 @@ export default function Signup() {
             label="Password"
             placeholder="Enter Your password"
           />
-          <Flex gap={"lg"} mt={"lg"}></Flex>
         </Flex>
         <Button w={"85%"}>Sign up</Button>
       </Flex>
