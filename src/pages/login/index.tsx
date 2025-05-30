@@ -56,7 +56,7 @@ export default function Login() {
                 navigate("/signup");
               }}
             >
-              Sign Up
+              SignUp
             </Text>
           </Text>
         </Flex>
