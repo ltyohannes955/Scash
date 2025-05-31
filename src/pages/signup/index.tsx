@@ -1,12 +1,4 @@
-import {
-  Flex,
-  Text,
-  Image,
-  Input,
-  PasswordInput,
-  ActionIcon,
-  Button,
-} from "@mantine/core";
+import { Flex, Text, Input, PasswordInput, Button } from "@mantine/core";
 import { useNavigate } from "react-router";
 
 export default function Signup() {
