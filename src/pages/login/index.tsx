@@ -3,6 +3,9 @@ import { useNavigate } from "react-router";
 
 export default function Login() {
   const navigate = useNavigate();
+  const handleLogin = () => {
+    navigate("/dashboard");
+  };
   return (
     <>
       <Flex bg={"#122117"} h={"100vh"} align={"center"} direction={"column"}>
@@ -28,6 +31,9 @@ export default function Login() {
             size="md"
             placeholder="Enter Your email"
             variant="unstyled"
+            style={{
+              borderRadius: "10px",
+            }}
             w={"95%"}
             bg={"#264533"}
             p={"sm"}
@@ -35,6 +41,9 @@ export default function Login() {
           <PasswordInput
             size="md"
             variant="unstyled"
+            style={{
+              borderRadius: "10px",
+            }}
             w={"95%"}
             bg={"#264533"}
             p={"sm"}
@@ -43,11 +52,13 @@ export default function Login() {
           <Text color="#38e07b" ta={"left"} w={"95%"}>
             Forgot Password?
           </Text>
-          <Button w={"95%"} size="lg">
-            Log In
+          <Button w={"95%"} size="lg" onClick={handleLogin}>
+            <Text c={"#122117"} fw={"bold"}>
+              Log In
+            </Text>
           </Button>
-          <Text color="white" fw={"bold"}>
-            New User{" "}
+          <Text color="gray">
+            New User Create an account{" "}
             <Text
               c={"#38e07b"}
               fw={"bold"}
