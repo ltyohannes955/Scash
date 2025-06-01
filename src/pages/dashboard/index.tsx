@@ -1,4 +1,4 @@
-import { Flex, Text } from "@mantine/core";
+import { Flex } from "@mantine/core";
 import { RootShell } from "../../components/layout/shell/root";
 
 export default function Dashboard() {
