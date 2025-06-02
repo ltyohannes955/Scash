@@ -6,7 +6,8 @@ export default function Dashboard() {
     <>
       <RootShell Title="Dashboard">
         <Flex bg={"#122117"} h={"80vh"} align={"center"} direction={"column"}>
-          sdadasd
+          <Flex>//card</Flex>
+          <Flex>//transaction</Flex>
         </Flex>
       </RootShell>
     </>
