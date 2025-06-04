@@ -1,5 +1,4 @@
 import {
-  ActionIcon,
   AppShell,
   Box,
   Card,
@@ -9,13 +8,7 @@ import {
   SimpleGrid,
   Text,
 } from "@mantine/core";
-import {
-  Plus,
-  LayoutDashboard,
-  User2,
-  Banknote,
-  ArrowLeftRight,
-} from "lucide-react";
+import { LayoutDashboard, User2, Banknote, ArrowLeftRight } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
 
@@ -45,13 +38,10 @@ export function RootShell({
       {!noHeader && (
         <AppShell.Header withBorder={false} bg={"#122117"}>
           <Container size="480" h="100%">
-            <Flex align="center" h="100%" justify="space-between">
+            <Flex align="center" h="100%" justify="center">
               <Text c={"white"} fw={"bold"}>
                 {Title}
               </Text>
-              <ActionIcon variant="transparent" size="lg">
-                <Plus color="white" />
-              </ActionIcon>
             </Flex>
           </Container>
         </AppShell.Header>
