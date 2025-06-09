@@ -1,12 +1,10 @@
 import { Flex, Text } from "@mantine/core";
 
-export function transaction() {
+export function Transaction() {
   return (
     <>
       <Flex>
-        <Text size="md" c={"white"} fw={"bold"}>
-          Transaction
-        </Text>
+        <Text size="md" c={"white"} fw={"bold"}></Text>
       </Flex>
     </>
   );

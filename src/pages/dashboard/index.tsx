@@ -2,6 +2,7 @@ import { Flex, Text } from "@mantine/core";
 import { RootShell } from "../../components/layout/shell/root";
 import { Cards } from "./card";
 import { AddButton } from "./addButton";
+import { Transaction } from "./transaction";
 
 export default function Dashboard() {
   return (
@@ -15,6 +16,7 @@ export default function Dashboard() {
           <Cards />
           {/* this is the floting button */}
           <AddButton />
+          <Transaction />
         </Flex>
       </RootShell>
     </>
