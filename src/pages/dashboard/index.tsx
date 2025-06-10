@@ -11,12 +11,12 @@ export default function Dashboard() {
         <Text size="md" c={"white"} fw={"bold"}>
           Account
         </Text>
-        <Flex bg={"#122117"} h={"80vh"} align={"center"} direction={"column"}>
+        <Flex bg={"#122117"} align={"center"} direction={"column"} gap={"md"}>
           {/* this is the cards that shows total and also will be changed to sliding card that separets bank accounts */}
           <Cards />
           {/* this is the floting button */}
-          <AddButton />
           <Transaction />
+          <AddButton />
         </Flex>
       </RootShell>
     </>
