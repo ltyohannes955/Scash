@@ -2,6 +2,7 @@ import { Flex, Text } from "@mantine/core";
 import { RootShell } from "../../components/layout/shell/root";
 import { Cards } from "./card";
 import { AddButton } from "./addButton";
+import { Transaction } from "./transaction";
 
 export default function Dashboard() {
   return (
@@ -10,10 +11,11 @@ export default function Dashboard() {
         <Text size="md" c={"white"} fw={"bold"}>
           Account
         </Text>
-        <Flex bg={"#122117"} h={"80vh"} align={"center"} direction={"column"}>
+        <Flex bg={"#122117"} align={"center"} direction={"column"} gap={"md"}>
           {/* this is the cards that shows total and also will be changed to sliding card that separets bank accounts */}
           <Cards />
           {/* this is the floting button */}
+          <Transaction />
           <AddButton />
         </Flex>
       </RootShell>

@@ -6,7 +6,7 @@ export function Cards() {
     <>
       <Flex
         bg={"#264533"}
-        h={"25%"}
+        h={"20vh"}
         w={"97%"}
         mt={"lg"}
         style={{ borderRadius: "10px" }}
