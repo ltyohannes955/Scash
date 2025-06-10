@@ -1,4 +1,4 @@
-import { Card, Flex, ScrollArea, Text } from "@mantine/core";
+import { Card, Flex, Text } from "@mantine/core";
 import {
   Fuel,
   ShoppingCart,
