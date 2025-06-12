@@ -25,7 +25,7 @@ export function Transaction() {
       id: 2,
       data: "2025/04/08",
       type: "Salary",
-      amount: "15000.00",
+      amount: "150.00",
       transactionType: "credit",
     },
     {
