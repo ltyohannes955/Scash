@@ -1,4 +1,3 @@
-import { Flex } from "@mantine/core";
 import { RootShell } from "../../components/layout/shell/root";
 import { Transaction } from "../../components/transaction";
 
