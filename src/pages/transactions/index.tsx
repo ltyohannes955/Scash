@@ -1,9 +1,13 @@
 import { Flex } from "@mantine/core";
+import { RootShell } from "../../components/layout/shell/root";
+import { Transaction } from "../../components/transaction";
 
 export default function Transactions() {
   return (
     <>
-      <Flex>Transaction page</Flex>
+      <RootShell Title="Transactions">
+        <Transaction Title="All Tranactions" slice={false} />
+      </RootShell>
     </>
   );
 }
