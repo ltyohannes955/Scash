@@ -12,7 +12,13 @@ import {
   UtensilsCrossed,
 } from "lucide-react";
 
-export function Transaction() {
+export function Transaction({
+  Title,
+  slice,
+}: {
+  Title: string;
+  slice: boolean;
+}) {
   const transactions = [
     {
       id: 1,
@@ -97,13 +103,13 @@ export function Transaction() {
     Salary: <CreditCard color="White" />,
     Movie: <Clapperboard color="white" />,
   };
-
+  const slicedTransactions = slice ? transactions.slice(0, 5) : transactions;
   return (
     <>
       <Text c="white" fw={"bold"} w={"100%"}>
-        Recent Transactions
+        {Title}
       </Text>
-      {transactions.slice(0, 5).map((transactions, index) => (
+      {slicedTransactions.map((transactions, index) => (
         <>
           <Card
             key={index}
